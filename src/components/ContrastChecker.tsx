@@ -3,10 +3,9 @@ import './../styles/ContrastChecker.scss';
 
 const ContrastChecker: React.FC = () => {
 
-    // COLOR QUEMADO INICIAL
     const [bgColor, setBgColor] = useState<string>('#646cff');
 
-    // FUNCION PARA GENERAR COLOR ALEATORIO
+    // Generador del color aleatoreoooo
     const generateRandomColor = (): string => {
         const letters = '0123456789ABCDEF';
         let color = '#';
@@ -18,7 +17,7 @@ const ContrastChecker: React.FC = () => {
         return color;
     };
 
-    // CAMBIO AUTOMATICO CADA 2 SEGUNDOS
+    // Cada dos seg
     useEffect(() => {
 
         const interval = setInterval(() => {
