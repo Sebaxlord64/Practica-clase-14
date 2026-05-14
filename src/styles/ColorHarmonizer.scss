@@ -1,0 +1,38 @@
+.harmonies {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    h2,
+    label {
+        color: white;
+    }
+
+    input[type="range"] {
+        width: 300px;
+    }
+
+    // UN SOLO OBJETO
+    .main-object {
+        width: 320px;
+        height: 320px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    .color-part {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.3s ease;
+    }
+}
